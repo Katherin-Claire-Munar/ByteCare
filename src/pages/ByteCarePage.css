@@ -33,7 +33,7 @@
   padding: var(--padding-xl) 0;
   align-items: center;
   justify-content: center;
-  gap: 45px;
+  gap: 35px;
 }
 .check-result {
   position: relative;
@@ -66,6 +66,8 @@
   position: relative;
   border-radius: 5px;
   height: 195px;
+  font-size: 12px;
+  color: black;
 }
 .result-field,
 .right-section {
