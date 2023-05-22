@@ -84,6 +84,9 @@ const ByteCarePage = () => {
     };
   }, []);
 
+
+  const stringArray = output.split('\n');
+  
   return (
     <div className="byte-care-page" data-animate-on-scroll>
       <div className="right-section">
@@ -153,7 +156,9 @@ const ByteCarePage = () => {
         </button>
         <div className="result-field">
           <div className="result">Result</div>
-          <p className="result-container">{output}</p>
+          <p className="result-container"> {stringArray.map((line, index) => (
+                      <p key={index}>{line}</p>
+          ))}</p>
         </div>
       </div>
       <div className="left-section">

@@ -134,7 +134,7 @@ def map_word_to_rowPrecaution(word):
         next(reader)  # Skip the header row
         for row in reader:
             if row[0] == word:
-                return '.\n'.join([val.capitalize() for val in row[1:5]])
+                return '.'.join([val.capitalize() for val in row[1:5]])
 
     return None  # Word not found
 
