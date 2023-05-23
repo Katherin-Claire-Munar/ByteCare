@@ -151,6 +151,7 @@ def randomforest(symptom1):
     print("Training Accuracy:", train_accuracy)
     #print(accuracy_score(y_test, y_pred))
     #print(accuracy_score(y_test, y_pred, normalize=False))
+    
     print("Confusion matrix")
     conf_matrix = confusion_matrix(y_test, y_pred)
     print(conf_matrix)
