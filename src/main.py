@@ -130,7 +130,7 @@ def map_word_to_rowPrecaution(word):
         next(reader)  # Skip the header row
         for row in reader:
             if row[0] == word:
-                return '.'.join([val.capitalize() for val in row[1:5]])
+                return ''.join([val.capitalize() for val in row[1:5]])
 
     return None  # Word not found
 
@@ -184,7 +184,7 @@ def randomforest(symptom1):
             for label in labels:
                 disease_description = map_word_to_row(label)[1]
                 precaution = map_word_to_rowPrecaution(label)
-                output_lines.append(f"{i}. <b>{label}<b>: {disease_description}\nPrecaution: {precaution}")
+                output_lines.append(f"{i}. <b>{label}</b>: {disease_description}\nPrecaution: {precaution}")
                 i+=1
             formatted_output = "\n\n".join(output_lines)
             formatted_outputs.append(formatted_output)
