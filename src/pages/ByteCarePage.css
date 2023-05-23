@@ -74,6 +74,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: Poppins,sans-serif;
+  min-height: 200px;
   font-size: 12px;
   font-weight: 500;
   color: #0a2c48;
