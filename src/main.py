@@ -15,29 +15,25 @@ import textwrap
 
 #List of the symptoms is listed here in list l1.
 
-l1=['itching', 'skin rash', 'nodal skin eruptions', 'continuous sneezing', 'shivering', 'chills', 
-    'joint pain', 'stomach pain', 'acidity', 'ulcers on tongue', 'muscle wasting', 'vomiting', 'burning micturition', 
-    'spotting  urination', 'fatigue', 'weight gain', 'anxiety', 'cold hands and feets', 'mood swings', 'weight loss', 
-    'restlessness', 'lethargy', 'patches in throat', 'irregular sugar level', 'cough', 'high fever', 'sunken eyes', 
-    'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish skin', 'dark urine', 'nausea', 
-    'loss of appetite', 'pain behind the eyes', 'back pain', 'constipation', 'abdominal pain', 'diarrhoea', 'mild fever', 
-    'yellow urine', 'yellowing of eyes', 'acute liver failure', 'fluid overload', 'swelling of stomach', 
-    'swelled lymph nodes', 'malaise', 'blurred and distorted vision', 'phlegm', 'throat irritation', 'redness of eyes', 
-    'sinus pressure', 'runny nose', 'congestion', 'chest pain', 'weakness in limbs', 'fast heart rate', 
-    'pain during bowel movements', 'pain in anal region', 'bloody stool', 'irritation in anus', 'neck pain', 
-    'dizziness', 'cramps', 'bruising', 'obesity', 'swollen legs', 'swollen blood vessels', 'puffy face and eyes', 
-    'enlarged thyroid', 'brittle nails', 'swollen extremeties', 'excessive hunger', 'extra marital contacts', 
-    'drying and tingling lips', 'slurred speech', 'knee pain', 'hip joint pain', 'muscle weakness', 'stiff neck', 
-    'swelling joints', 'movement stiffness', 'spinning movements', 'loss of balance', 'unsteadiness', 
-    'weakness of one body side', 'loss of smell', 'bladder discomfort', 'foul smell of urine', 
-    'continuous feel of urine', 'passage of gases', 'internal itching', 'toxic look (typhos)', 'depression', 
-    'irritability', 'muscle pain', 'altered sensorium', 'red spots over body', 'belly pain', 'abnormal menstruation', 
-    'dischromic  patches', 'watering from eyes', 'increased appetite', 'polyuria', 'family history', 'mucoid sputum', 
-    'rusty sputum', 'lack of concentration', 'visual disturbances', 'receiving blood transfusion', 
-    'receiving unsterile injections', 'coma', 'stomach bleeding', 'distention of abdomen', 'history of alcohol consumption', 
-    'fluid overload.1', 'blood in sputum', 'prominent veins on calf', 'palpitations', 'painful walking', 'pus filled pimples', 
-    'blackheads', 'scurring', 'skin peeling', 'silver like dusting', 'small dents in nails', 'inflammatory nails', 'blister', 
-    'red sore around nose', 'yellow crust ooze'
+l1=['back pain','constipation','abdominal pain','diarrhoea','mild fever','yellow urine',
+    'yellowing of eyes','acute liver failure','fluid overload','swelling of stomach',
+    'swelled lymph nodes','malaise','blurred and distorted vision','phlegm','throat irritation',
+    'redness of eyes','sinus pressure','runny nose','congestion','chest pain','weakness in limbs',
+    'fast heart rate','pain during bowel movements','pain in anal region','bloody stool',
+    'irritation in anus','neck pain','dizziness','cramps','bruising','obesity','swollen legs',
+    'swollen blood vessels','puffy face and eyes', 'headache',
+    'excessive hunger','drying and tingling lips', 'cough',
+    'slurred speech','knee pain','hip joint pain','muscle weakness','stiff neck','swelling joints',
+    'movement stiffness','spinning movements','loss of balance','unsteadiness',
+    'weakness of one body side','loss of smell','bladder discomfort','foul smell of urine',
+    'depression','irritability','muscle pain','altered sensorium','red spots over body','belly pain',
+    'abnormal menstruation','dischromic  patches','watery eyes','increased appetite','polyuria','mucoid sputum',
+    'rusty sputum','lack of concentration','receiving blood transfusion',
+    'coma','stomach bleeding','distention of abdomen',
+    'history of alcohol consumption','fluid overload','blood in sputum','prominent veins on calf',
+    'palpitations','painful walking','pus filled pimples','blackheads','scurring','skin peeling',
+    'silver like dusting','small dents in nails','inflammatory nails','blister','red sore around nose',
+    'yellow crust ooze', 'itching', 'skin rash', 'shivering', 'chills', 'fatigue'
 ]
 
 #List of Diseases is listed in list disease.
@@ -140,9 +136,14 @@ def map_word_to_rowPrecaution(word):
 
 #root = Tk()
 
-def randomforest(symptom1, symptom2, symptom3, symptom4, symptom5):
+
+def randomforest(symptom1):
     clf4 = RandomForestClassifier(n_estimators=100)
     clf4 = clf4.fit(X, np.ravel(y))
+
+    y_train_pred = clf4.predict(X)
+    train_accuracy = accuracy_score(y, y_train_pred)
+    print("Training Accuracy:", train_accuracy)
 
     y_pred = clf4.predict(X_test)
     print("Random Forest")
@@ -153,31 +154,43 @@ def randomforest(symptom1, symptom2, symptom3, symptom4, symptom5):
     conf_matrix = confusion_matrix(y_test, y_pred)
     print(conf_matrix)
 
-    psymptoms = [symptom1, symptom2, symptom3, symptom4, symptom5]
+    psymptoms = []
 
-    for k in range(0, len(l1)):
-        for z in psymptoms:
-            if(z==l1[k]):
-                l2[k] = 1
-            #if find_closest_match(z, l1) == l1[k]:
-                
-                
+    for word in l1:
+        if word in symptom1:
+            psymptoms.append(word)
+
+    print(psymptoms)
+
+    l2 = [0] * len(l1)
+    for k in range(len(l1)):
+        if l1[k] in psymptoms:
+            l2[k] = 1
 
     inputtest = [l2]
-    predict = clf4.predict(inputtest)
-    predicted = predict[0]
-    h = 'no'
-    for a in range(0, len(disease)):
-        if predicted == a:
-            h = 'yes'
-            break
+    predictions = clf4.predict_proba(inputtest)
+    predicted_labels = []
+    for prediction in predictions:
+        top_3_indices = np.argsort(prediction)[-3:][::-1]  # Get the indices of top 3 probabilities
+        top_3_labels = [disease[index] for index in top_3_indices]
+        predicted_labels.append(top_3_labels)
 
-    if h == 'yes':
-        disease_description = map_word_to_row(disease[a])[1]
-        precaution = map_word_to_rowPrecaution(disease[a])
-        formatted_output = f"{disease[a]}: {disease_description}\nPrecaution: {precaution}"
-        print(formatted_output)
+    print(predicted_labels)
+    if predicted_labels:
+        formatted_outputs = []
+        for labels in predicted_labels:
+            output_lines = []
+            i = 1
+            for label in labels:
+                disease_description = map_word_to_row(label)[1]
+                precaution = map_word_to_rowPrecaution(label)
+                output_lines.append(f"{i}. <b>{label}<b>: {disease_description}\nPrecaution: {precaution}")
+                i+=1
+            formatted_output = "\n\n".join(output_lines)
+            formatted_outputs.append(formatted_output)
+            print(formatted_output)
         return formatted_output
     else:
         print("Not Found")
         return "Not Found"
+

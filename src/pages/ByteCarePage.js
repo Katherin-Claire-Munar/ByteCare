@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 import { TextField } from "@mui/material";
 import "./ByteCarePage.css";
-
+import React from 'react';
 
 const ByteCarePage = () => {
   
   const [output, setOutput] = useState('');
-  const [output2, setOutput2] = useState('');
-  const [output3, setOutput3] = useState('');
   const [symptoms, setSymptoms] = useState({
     symptom1: "",
-    symptom2: "",
-    symptom3: "",
-    symptom4: "",
-    symptom5: "",
+    //symptom2: "",
+    //symptom3: "",
+    //symptom4: "",
+    //symptom5: "",
   });
 
   const handleSymptomChange = (event, symptomKey) => {
@@ -103,10 +101,13 @@ const ByteCarePage = () => {
             label="Symptom 1"
             size="medium"
             margin="none"
+            multiline
+            rows={4}
+            fullWidth
             value={symptoms.symptom1}
             onChange={(event) => handleSymptomChange(event, "symptom1")}
           />
-          <TextField
+          {/*<TextField
             className="input-symptom-1"
             color="primary"
             variant="outlined"
@@ -149,18 +150,41 @@ const ByteCarePage = () => {
             margin="none"
             value={symptoms.symptom5}
             onChange={(event) => handleSymptomChange(event, "symptom5")}
-          />
+          />*/}
         </div>
         <button className="check-result-button" onClick={handleClick}>
           <div className="check-result">Check Result</div>
         </button>
         <div className="result-field">
           <div className="result">Result</div>
-          <p className="result-container"> {stringArray.map((line, index) => (
-                      <p key={index}>{line}</p>
-          ))}</p>
+
+              <p className="result-container">
+                {stringArray.map((line, index) => {
+                  if (line.includes("<b>")) {
+                    const parts = line.split("<b>");
+                    return (
+                      <p key={index}>
+                        {parts.map((part, partIndex) => {
+                          if (part.includes("</b>")) {
+                            const boldParts = part.split("</b>");
+                            return (
+                              <React.Fragment key={partIndex}>
+                                <b>{boldParts[0]}</b>
+                                {boldParts[1]}
+                              </React.Fragment>
+                            );
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  }
+                  return <p key={index}>{line}</p>;
+                })}
+              </p>
+
+          </div>
         </div>
-      </div>
       <div className="left-section">
         <div className="left-section-content">
           <div className="bytecare">ByteCare.</div>
