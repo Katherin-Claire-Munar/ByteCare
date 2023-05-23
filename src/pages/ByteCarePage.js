@@ -18,6 +18,7 @@ const ByteCarePage = () => {
     setSymptoms((prevState) => ({
       ...prevState,
       [symptomKey]: event.target.value,
+      
     }));
   };
 
