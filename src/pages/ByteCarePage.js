@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { TextField } from "@mui/material";
 import "./ByteCarePage.css";
-
+import React from 'react';
 
 const ByteCarePage = () => {
   
@@ -157,11 +157,34 @@ const ByteCarePage = () => {
         </button>
         <div className="result-field">
           <div className="result">Result</div>
-          <p className="result-container"> {stringArray.map((line, index) => (
-                      <p key={index}>{line}</p>
-          ))}</p>
+
+              <p className="result-container">
+                {stringArray.map((line, index) => {
+                  if (line.includes("<b>")) {
+                    const parts = line.split("<b>");
+                    return (
+                      <p key={index}>
+                        {parts.map((part, partIndex) => {
+                          if (part.includes("</b>")) {
+                            const boldParts = part.split("</b>");
+                            return (
+                              <React.Fragment key={partIndex}>
+                                <b>{boldParts[0]}</b>
+                                {boldParts[1]}
+                              </React.Fragment>
+                            );
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  }
+                  return <p key={index}>{line}</p>;
+                })}
+              </p>
+
+          </div>
         </div>
-      </div>
       <div className="left-section">
         <div className="left-section-content">
           <div className="bytecare">ByteCare.</div>

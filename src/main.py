@@ -141,10 +141,7 @@ def randomforest(symptom1):
     clf4 = RandomForestClassifier(n_estimators=100)
     clf4 = clf4.fit(X, np.ravel(y))
 
-
     y_train_pred = clf4.predict(X)
-
-    # Calculate accuracy of training set predictions
     train_accuracy = accuracy_score(y, y_train_pred)
     print("Training Accuracy:", train_accuracy)
 
@@ -157,8 +154,6 @@ def randomforest(symptom1):
     conf_matrix = confusion_matrix(y_test, y_pred)
     print(conf_matrix)
 
-    #input_string = "I have pus filled pimples, and a headache"
-
     psymptoms = []
 
     for word in l1:
@@ -167,31 +162,35 @@ def randomforest(symptom1):
 
     print(psymptoms)
 
-    #psymptoms = [symptom1, symptom2, symptom3, symptom4, symptom5]
-
-    for k in range(0, len(l1)):
-        for z in psymptoms:
-            if(z==l1[k]):
-                l2[k] = 1
-            #if find_closest_match(z, l1) == l1[k]:
-                
-                
+    l2 = [0] * len(l1)
+    for k in range(len(l1)):
+        if l1[k] in psymptoms:
+            l2[k] = 1
 
     inputtest = [l2]
-    predict = clf4.predict(inputtest)
-    predicted = predict[0]
-    h = 'no'
-    for a in range(0, len(disease)):
-        if predicted == a:
-            h = 'yes'
-            break
+    predictions = clf4.predict_proba(inputtest)
+    predicted_labels = []
+    for prediction in predictions:
+        top_3_indices = np.argsort(prediction)[-3:][::-1]  # Get the indices of top 3 probabilities
+        top_3_labels = [disease[index] for index in top_3_indices]
+        predicted_labels.append(top_3_labels)
 
-    if h == 'yes':
-        disease_description = map_word_to_row(disease[a])[1]
-        precaution = map_word_to_rowPrecaution(disease[a])
-        formatted_output = f"{disease[a]}: {disease_description}\nPrecaution: {precaution}"
-        print(formatted_output)
+    print(predicted_labels)
+    if predicted_labels:
+        formatted_outputs = []
+        for labels in predicted_labels:
+            output_lines = []
+            i = 1
+            for label in labels:
+                disease_description = map_word_to_row(label)[1]
+                precaution = map_word_to_rowPrecaution(label)
+                output_lines.append(f"{i}. <b>{label}<b>: {disease_description}\nPrecaution: {precaution}")
+                i+=1
+            formatted_output = "\n\n".join(output_lines)
+            formatted_outputs.append(formatted_output)
+            print(formatted_output)
         return formatted_output
     else:
         print("Not Found")
         return "Not Found"
+
