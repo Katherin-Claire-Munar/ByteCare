@@ -88,6 +88,7 @@ const ByteCarePage = () => {
   return (
     <div className="byte-care-page" data-animate-on-scroll>
       <div className="right-section">
+        <div className="wrap">
         <div className="header">
           <span>{`What Is Your `}</span>
           <span className="symtoms">Symtoms?</span>
@@ -98,7 +99,7 @@ const ByteCarePage = () => {
             color="primary"
             variant="outlined"
             type="text"
-            label="Symptom 1"
+            label="Symptoms"
             size="medium"
             margin="none"
             multiline
@@ -180,9 +181,10 @@ const ByteCarePage = () => {
                     );
                   }
                   return <p key={index}>{line}</p>;
-                })}
+                })}         
               </p>
 
+          </div>
           </div>
         </div>
       <div className="left-section">
