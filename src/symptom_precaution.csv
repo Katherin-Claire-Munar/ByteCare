@@ -1,42 +1,78 @@
 Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
-Drug Reaction,stop irritation,consult nearest hospital,stop taking drug,follow up
-Malaria,Consult nearest hospital,avoid oily food,avoid non veg food,keep mosquitos out
-Allergy,apply calamine,cover area with bandage,,use ice to compress itching
-Hypothyroidism,reduce stress,exercise,eat healthy,get proper sleep
-Psoriasis,wash hands with warm soapy water,stop bleeding using pressure,consult doctor,salt baths
-GERD,avoid fatty spicy food,avoid lying down after eating,maintain healthy weight,exercise
-Chronic cholestasis,cold baths,anti itch medicine,consult doctor,eat healthy
-hepatitis A,Consult nearest hospital,wash hands through,avoid fatty spicy food,medication
-Osteoarthristis,acetaminophen,consult nearest hospital,follow up,salt baths
-(vertigo) Paroymsal  Positional Vertigo,lie down,avoid sudden change in body,avoid abrupt head movment,relax
-Hypoglycemia,lie down on side,check in pulse,drink sugary drinks,consult doctor
-Acne,bath twice,avoid fatty spicy food,drink plenty of water,avoid too many products
-Diabetes ,have balanced diet,exercise,consult doctor,follow up
-Impetigo,soak affected area in warm water,use antibiotics,remove scabs with wet compressed cloth,consult doctor
-Hypertension ,meditation,salt baths,reduce stress,get proper sleep
-Peptic ulcer diseae,avoid fatty spicy food,consume probiotic food,eliminate milk,limit alcohol
-Dimorphic hemmorhoids(piles),avoid fatty spicy food,consume witch hazel,warm bath with epsom salt,consume alovera juice
-Common Cold,drink vitamin c rich drinks,take vapour,avoid cold food,keep fever in check
-Chicken pox,use neem in bathing ,consume neem leaves,take vaccine,avoid public places
-Cervical spondylosis,use heating pad or cold pack,exercise,take otc pain reliver,consult doctor
-Hyperthyroidism,eat healthy,massage,use lemon balm,take radioactive iodine treatment
-Urinary tract infection,drink plenty of water,increase vitamin c intake,drink cranberry juice,take probiotics
-Varicose veins,lie down flat and raise the leg high,use oinments,use vein compression,dont stand still for long
-AIDS,avoid open cuts,wear ppe if possible,consult doctor,follow up
-Paralysis (brain hemorrhage),massage,eat healthy,exercise,consult doctor
-Typhoid,eat high calorie vegitables,antiboitic therapy,consult doctor,medication
-Hepatitis B,consult nearest hospital,vaccination,eat healthy,medication
-Fungal infection,bath twice,use detol or neem in bathing water,keep infected area dry,use clean cloths
-Hepatitis C,Consult nearest hospital,vaccination,eat healthy,medication
-Migraine,meditation,reduce stress,use poloroid glasses in sun,consult doctor
-Bronchial Asthma,switch to loose cloothing,take deep breaths,get away from trigger,seek help
-Alcoholic hepatitis,stop alcohol consumption,consult doctor,medication,follow up
-Jaundice,drink plenty of water,consume milk thistle,eat fruits and high fiberous food,medication
-Hepatitis E,stop alcohol consumption,rest,consult doctor,medication
-Dengue,drink papaya leaf juice,avoid fatty spicy food,keep mosquitos away,keep hydrated
-Hepatitis D,consult doctor,medication,eat healthy,follow up
-Heart attack,call ambulance,chew or swallow asprin,keep calm,
-Pneumonia,consult doctor,medication,rest,follow up
-Arthritis,exercise,use hot and cold therapy,try acupuncture,massage
-Gastroenteritis,stop eating solid food for while,try taking small sips of water,rest,ease back into eating
-Tuberculosis,cover mouth,consult doctor,medication,rest
+Drug Reaction,Discontinue the medication immediately.,Seek immediate medical attention.,Take antihistamines to relieve any allergic symptoms.,Apply a cold compress to reduce inflammation.
+Malaria,Use mosquito nets while sleeping.,Apply insect repellent on exposed skin.,Eliminate stagnant water around the house to prevent mosquito breeding.,Take prescribed antimalarial medications as directed.
+Allergy,Identify and avoid the allergen that triggers your allergy symptoms.,Keep windows closed to prevent pollen or other allergens from entering your home.,Use a HEPA air purifier to remove allergens from the air.,Take over-the-counter antihistamines to relieve allergy symptoms.
+Hypothyroidism,Take prescribed thyroid medication as directed by your doctor.,"Maintain a balanced diet with adequate iodine, selenium, and zinc.","Avoid consuming excessive amounts of goitrogenic foods, such as cabbage, broccoli, and soy products.",Ensure regular follow-up with your healthcare provider for thyroid hormone level monitoring and dosage adjustments.
+Psoriasis,Keep your skin moisturized by applying a non-irritating moisturizer regularly.,"Avoid triggers such as stress, smoking, alcohol, and certain medications.","Gently cleanse the affected areas with mild, fragrance-free soaps or cleansers.",Use prescribed topical treatments or medications as instructed by your healthcare provider.
+GERD,"Eat smaller, more frequent meals instead of large meals.","Avoid trigger foods and beverages such as fatty or spicy foods, citrus fruits, caffeine, and alcohol.",Maintain an upright posture for at least two hours after eating.,Elevate the head of your bed by placing blocks or using a wedge pillow to prevent acid reflux while sleeping.
+Chronic cholestasis,Follow a low-fat diet to reduce the workload on the liver.,Stay well-hydrated by drinking an adequate amount of water.,Avoid alcohol consumption as it can further damage the liver.,Take prescribed medications or supplements as directed by your doctor to support liver function and manage symptoms.
+hepatitis A,"Practice good hygiene by washing your hands thoroughly with soap and water, especially before handling food or eating.",Ensure the consumption of clean and safe drinking water. Avoid drinking untreated or contaminated water.,Get vaccinated against hepatitis A to prevent infection.,"Avoid consuming raw or undercooked shellfish, as they can be a source of hepatitis A contamination."
+Osteoarthristis,Engage in regular low-impact exercises to strengthen the muscles around the affected joints and improve joint flexibility.,Maintain a healthy weight to reduce the strain on weight-bearing joints.,Apply hot or cold packs to the affected joints to help relieve pain and inflammation.,"Use assistive devices such as braces, splints, or canes to support and protect the affected joints."
+(vertigo) Paroymsal  Positional Vertigo,Avoid sudden head movements or changes in body position that can trigger vertigo episodes.,Sleep with your head slightly elevated to reduce the intensity of vertigo symptoms.,"Take precautionary measures when getting up from bed or changing positions, such as sitting on the edge of the bed for a few moments before standing.","Avoid activities that involve excessive head movements or rapid changes in position, such as looking up for prolonged periods or performing activities that require bending forward."
+Hypoglycemia,"Eat regular, balanced meals with a combination of carbohydrates, protein, and healthy fats to maintain stable blood sugar levels.","Monitor your blood sugar levels regularly, especially if you're taking medications for diabetes.","Carry a source of fast-acting glucose, such as glucose tablets or fruit juice, to quickly raise your blood sugar if it drops too low.","Inform your friends, family, or coworkers about your condition and educate them on how to recognize and respond to hypoglycemic episodes."
+Acne,"Cleanse your face twice a day using a gentle, non-comedogenic cleanser to remove excess oil and dirt.","Avoid touching or picking at your acne, as it can worsen inflammation and lead to scarring.",Use over-the-counter acne products containing ingredients like benzoyl peroxide or salicylic acid to help control acne breakouts.,"Maintain a healthy diet, rich in fruits, vegetables, and whole grains, and drink plenty of water to support overall skin health."
+Diabetes ,Monitor your blood sugar levels regularly and keep a record of your readings.,"Follow a balanced meal plan that includes healthy carbohydrates, lean proteins, and high-fiber foods.",Engage in regular physical activity to help manage blood sugar levels and improve insulin sensitivity.,Take prescribed medications or insulin as directed by your healthcare provider and adhere to the recommended dosage and timing.
+Impetigo,Keep the affected area clean by gently washing it with mild soap and warm water.,Avoid scratching or picking at the impetigo sores to prevent spreading the infection.,Apply prescribed topical antibiotics or ointments as directed by your doctor.,Keep the affected area covered with a clean bandage or dressing to prevent the spread of bacteria and to protect it from further irritation.
+Hypertension ,"Follow a balanced diet low in sodium and high in fruits, vegetables, whole grains, and lean proteins.","Engage in regular aerobic exercise such as brisk walking, jogging, or swimming to help lower blood pressure.",Limit alcohol consumption and avoid tobacco products.,Take prescribed medications as directed by your healthcare provider and attend regular check-ups to monitor blood pressure levels.
+Peptic ulcer diseae,"Avoid foods and beverages that can irritate the stomach lining, such as spicy foods, caffeine, alcohol, and acidic foods.","Quit smoking, as it can increase the risk of developing or worsening peptic ulcers.","Take prescribed medications, such as proton pump inhibitors or H2 blockers, to reduce stomach acid production and promote healing of the ulcers.","Manage stress through relaxation techniques, regular exercise, and engaging in activities that you enjoy. Stress can exacerbate peptic ulcer symptoms."
+Dimorphic hemmorhoids(piles),"Increase your daily fiber intake through fruits, vegetables, whole grains, and legumes to soften the stool and reduce strain during bowel movements.",Stay well-hydrated by drinking an adequate amount of water throughout the day.,Avoid straining during bowel movements and try not to sit on the toilet for prolonged periods.,"Use over-the-counter hemorrhoid creams or ointments to relieve itching and discomfort, and consider warm sitz baths to soothe the area."
+Common Cold,Get plenty of rest and sleep to support your immune system.,"Stay hydrated by drinking fluids like water, herbal tea, and clear broth to help loosen mucus and keep your throat moist.","Use over-the-counter cold medications to alleviate symptoms such as congestion, coughing, and sore throat. Follow the instructions and consult a pharmacist if you have any concerns.",Wash your hands frequently and avoid close contact with others to prevent the spread of the common cold virus.
+Chicken pox,"Keep the affected person isolated to prevent the spread of chickenpox to others, especially individuals who have not had the infection or been vaccinated.",Trim the fingernails short or have the person wear gloves to minimize scratching and reduce the risk of secondary infections.,Apply calamine lotion or use cool compresses to relieve itching and soothe the skin.,"Give over-the-counter pain relievers (such as acetaminophen) to help reduce fever and discomfort. Consult a healthcare professional for appropriate dosage instructions, especially for children."
+Cervical spondylosis,"Maintain good posture while sitting, standing, and sleeping to minimize strain on the neck and spine.",Engage in regular neck exercises and stretches to improve flexibility and strengthen the neck muscles.,Apply heat or cold therapy to the affected area to help alleviate pain and reduce inflammation.,Use a supportive pillow and ensure a comfortable sleeping position that keeps the neck properly aligned.
+Hyperthyroidism,"Consult with a healthcare professional for appropriate treatment options, which may include medications, radioactive iodine therapy, or surgery.",Follow a well-balanced diet with adequate nutrients and avoid excessive iodine intake.,"Manage stress through relaxation techniques, exercise, and seeking support from friends and family.","Regularly monitor thyroid hormone levels and attend follow-up appointments with your healthcare provider.
+
+
+"
+Urinary tract infection,Stay well-hydrated by drinking plenty of water to help flush out bacteria from the urinary tract.,Urinate frequently and completely to help prevent the growth of bacteria in the urinary tract.,"Practice good hygiene, especially around the genital area. Wipe from front to back after using the toilet to prevent the spread of bacteria from the anus to the urethra.","Avoid holding in urine for long periods and empty your bladder before and after sexual intercourse.
+
+
+"
+Varicose veins,Maintain a healthy weight to reduce pressure on the veins.,Engage in regular physical activity to improve circulation and strengthen the leg muscles.,"Elevate your legs above heart level when resting or sleeping to reduce swelling and improve blood circulation.
+
+
+",Avoid prolonged periods of standing or sitting. Take breaks and move around to promote blood flow.
+AIDS,Practice safe sex by using condoms consistently and correctly to prevent the transmission of HIV.,"Get tested for HIV regularly, especially if you engage in high-risk behaviors.","If diagnosed with HIV, start antiretroviral therapy (ART) as soon as possible and adhere to the prescribed treatment regimen.","Seek support from healthcare professionals, support groups, and counseling services to manage the physical and emotional aspects of living with HIV/AIDS.
+
+
+"
+Paralysis,Ensure a safe and supportive environment.,Follow a balanced and nutritious diet.,Engage in gentle range-of-motion exercises if possible.,"Seek emotional support and maintain a positive mindset.
+
+
+"
+Typhoid,"Practice good hygiene by washing hands thoroughly with soap and water before handling food, after using the toilet, and before eating.","Drink only clean and safe water, preferably boiled or purified.","Ensure proper food hygiene by consuming well-cooked and hot meals, avoiding raw or undercooked foods, and washing fruits and vegetables thoroughly.","Take prescribed antibiotics as directed by your healthcare provider for the treatment of typhoid.
+
+
+"
+Hepatitis B,Practice safe sex by using condoms consistently and correctly to prevent the transmission of hepatitis B.,Avoid sharing needles or any drug paraphernalia.,Ensure proper sterilization of medical and tattooing equipment to prevent the spread of the virus.,"Get vaccinated against hepatitis B to protect yourself from the infection.
+
+
+"
+Fungal infection,Keep the affected area clean and dry.,Avoid sharing personal items such as towels or clothing with others.,"Wear breathable fabrics and change clothes regularly, especially in hot and humid environments.",Use over-the-counter antifungal creams or powders as directed to treat the infection.
+Hepatitis C,Avoid sharing needles or any drug paraphernalia.,Practice safe sex by using condoms consistently and correctly to prevent the transmission of hepatitis C.,"Be cautious when getting tattoos or body piercings, ensuring that sterile equipment is used.","Seek medical evaluation and treatment for hepatitis C, as there are effective antiviral medications available that can help cure the infection."
+Migraine,"Identify and avoid triggers that can lead to migraines, such as certain foods, bright lights, strong smells, and stress.",Establish a regular sleep schedule and ensure you get enough sleep each night.,Apply a cold or warm compress to the head or neck area to help alleviate pain during a migraine attack.,"Consider over-the-counter pain relievers or prescribed medications specifically designed to manage migraines. Follow the instructions provided by your healthcare provider or pharmacist.
+
+
+"
+Bronchial Asthma,"Avoid triggers that can worsen asthma symptoms, such as smoke, pollen, dust mites, pet dander, and strong odors.","Take prescribed medications as directed, including long-term control medications and quick-relief inhalers.","Create a clean and dust-free environment at home, and use allergen-proof covers for mattresses and pillows.","Develop an asthma action plan with your healthcare provider, which outlines steps to manage asthma attacks and when to seek emergency medical care."
+Alcoholic hepatitis,Seek immediate medical attention and follow the prescribed treatment plan provided by your healthcare provider.,Completely abstain from alcohol to prevent further damage to the liver.,"Follow a well-balanced, nutritious diet that supports liver health, avoiding fatty or processed foods.","Stay hydrated by drinking an adequate amount of water and fluids, unless otherwise advised by your healthcare provider."
+Jaundice,Rest and get plenty of sleep to support the healing process.,Stay well-hydrated by drinking an adequate amount of water and fluids.,"Avoid consuming alcohol and follow a healthy, balanced diet to support liver function.","Consult with a healthcare provider for appropriate treatment options and to monitor your condition closely.
+
+
+"
+Hepatitis E,Ensure safe drinking water by drinking boiled or purified water to prevent the transmission of Hepatitis E.,"Practice good personal hygiene, including regular handwashing with soap and water.",Avoid consuming raw or undercooked shellfish and uncooked or unwashed fruits and vegetables.,"Seek medical attention if you experience symptoms of Hepatitis E, such as fatigue, jaundice, abdominal pain, and nausea."
+Dengue,"Prevent mosquito bites by wearing long sleeves, using mosquito repellent, and staying in screened or air-conditioned areas.",Remove stagnant water from around your home to eliminate breeding sites for mosquitoes.,"Wear protective clothing, such as long pants and socks, to minimize exposure to mosquitoes.","Stay hydrated and rest if you have dengue fever, and seek medical attention if symptoms worsen or persist.
+
+
+"
+Hepatitis D,"If you have hepatitis D, it is important to seek medical care and follow the treatment plan provided by your healthcare provider.",Avoid alcohol and other substances that can further damage the liver.,"Practice good hygiene, including regular handwashing with soap and water.","Get vaccinated against hepatitis B to prevent co-infection with hepatitis D.
+
+
+"
+Heart attack,Call emergency services immediately.,Chew and swallow aspirin (if not allergic) as directed by a healthcare professional.,"Stay calm and lie down, keeping the body relaxed.","If unconscious, perform CPR if trained to do so.
+
+
+"
+Pneumonia,Seek medical attention promptly if you suspect you have pneumonia.,"Follow the prescribed treatment plan, including taking antibiotics as directed by your healthcare provider.",Get plenty of rest and stay hydrated to support the healing process.,"Practice good respiratory hygiene, such as covering your mouth and nose when coughing or sneezing, to prevent the spread of the infection."
+Arthritis,Engage in regular physical activity and exercise to maintain joint flexibility and strength.,Apply hot or cold packs to affected joints to help reduce pain and inflammation.,Maintain a healthy weight to reduce stress on the joints.,Use assistive devices or adaptive tools to make daily activities easier and reduce joint strain.
+Gastroenteritis,"Stay well-hydrated by drinking plenty of fluids like water, clear broth, and oral rehydration solutions to replace lost fluids and electrolytes.","Follow the BRAT diet (bananas, rice, applesauce, and toast) to provide easily digestible foods.","Avoid spicy, greasy, and heavy foods that can worsen gastrointestinal symptoms.","Practice good hand hygiene, including frequent handwashing, to prevent the spread of the infection to others."
+Tuberculosis,Seek medical attention and follow the prescribed treatment plan provided by your healthcare provider.,Take all medications as directed and complete the full course of treatment to ensure effective eradication of the infection.,"Practice good respiratory hygiene, such as covering your mouth and nose with a tissue or your elbow when coughing or sneezing, to prevent the spread of the bacteria.","Maintain a healthy lifestyle, including a balanced diet, regular exercise, and adequate rest, to support overall health and immune function."
