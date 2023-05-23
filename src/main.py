@@ -184,7 +184,7 @@ def randomforest(symptom1):
             for label in labels:
                 disease_description = map_word_to_row(label)[1]
                 precaution = map_word_to_rowPrecaution(label)
-                output_lines.append(f"{i}. <b>{label}<b>: {disease_description}\nPrecaution: {precaution}")
+                output_lines.append(f"{i}. <b>{label}</b>: {disease_description}\nPrecaution: {precaution}")
                 i+=1
             formatted_output = "\n\n".join(output_lines)
             formatted_outputs.append(formatted_output)
