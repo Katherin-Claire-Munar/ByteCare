@@ -143,13 +143,14 @@ def randomforest(symptom1):
 
     y_train_pred = clf4.predict(X)
     train_accuracy = accuracy_score(y, y_train_pred)
-    print("Training Accuracy:", train_accuracy)
+    
 
     y_pred = clf4.predict(X_test)
     print("Random Forest")
-    print("Accuracy")
-    print(accuracy_score(y_test, y_pred))
-    print(accuracy_score(y_test, y_pred, normalize=False))
+    #print("Accuracy")
+    print("Training Accuracy:", train_accuracy)
+    #print(accuracy_score(y_test, y_pred))
+    #print(accuracy_score(y_test, y_pred, normalize=False))
     print("Confusion matrix")
     conf_matrix = confusion_matrix(y_test, y_pred)
     print(conf_matrix)
