@@ -6,14 +6,12 @@ import "./ByteCarePage.css";
 const ByteCarePage = () => {
   
   const [output, setOutput] = useState('');
-  const [output2, setOutput2] = useState('');
-  const [output3, setOutput3] = useState('');
   const [symptoms, setSymptoms] = useState({
     symptom1: "",
-    symptom2: "",
-    symptom3: "",
-    symptom4: "",
-    symptom5: "",
+    //symptom2: "",
+    //symptom3: "",
+    //symptom4: "",
+    //symptom5: "",
   });
 
   const handleSymptomChange = (event, symptomKey) => {
@@ -103,10 +101,13 @@ const ByteCarePage = () => {
             label="Symptom 1"
             size="medium"
             margin="none"
+            multiline
+            rows={4}
+            fullWidth
             value={symptoms.symptom1}
             onChange={(event) => handleSymptomChange(event, "symptom1")}
           />
-          <TextField
+          {/*<TextField
             className="input-symptom-1"
             color="primary"
             variant="outlined"
@@ -149,7 +150,7 @@ const ByteCarePage = () => {
             margin="none"
             value={symptoms.symptom5}
             onChange={(event) => handleSymptomChange(event, "symptom5")}
-          />
+          />*/}
         </div>
         <button className="check-result-button" onClick={handleClick}>
           <div className="check-result">Check Result</div>
