@@ -130,7 +130,7 @@ def map_word_to_rowPrecaution(word):
         next(reader)  # Skip the header row
         for row in reader:
             if row[0] == word:
-                return ''.join([val.capitalize() for val in row[1:5]])
+                return ' '.join([val.capitalize() for val in row[1:5]])
 
     return None  # Word not found
 
@@ -147,15 +147,8 @@ def randomforest(symptom1):
 
     y_pred = clf4.predict(X_test)
     print("Random Forest")
-    #print("Accuracy")
     print("Training Accuracy:", train_accuracy)
-    #print(accuracy_score(y_test, y_pred))
-    #print(accuracy_score(y_test, y_pred, normalize=False))
     
-    print("Confusion matrix")
-    conf_matrix = confusion_matrix(y_test, y_pred)
-    print(conf_matrix)
-
     psymptoms = []
 
     for word in l1:
@@ -165,9 +158,14 @@ def randomforest(symptom1):
     print(psymptoms)
 
     l2 = [0] * len(l1)
+    check = 0
     for k in range(len(l1)):
         if l1[k] in psymptoms:
             l2[k] = 1
+            check = 1
+    
+    if check == 0:
+        return "Provide a valid symptoms."
 
     inputtest = [l2]
     predictions = clf4.predict_proba(inputtest)
